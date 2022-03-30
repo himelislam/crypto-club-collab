@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import Homepage from './components/Homepage/Homepage'
 import About from './components/About/About'
 import Footer from './components/Footer/Footer'
+import NotFound from './components/NotFound/NotFound'
 import CoinDetails from './components/CoinDetails/CoinDetails'
 import BdAddress from './components/Contact/BdAddress'
 import UsAddress from './components/Contact/UsAddress'
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='usAddress' element={<UsAddress></UsAddress>}></Route>
         </Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
